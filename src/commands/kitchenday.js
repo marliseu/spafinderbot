@@ -21,7 +21,7 @@ if (!status) {
 }
 
 let attachments = [{
-    title: "Today's kitchen day is: *" + status + "*!",
+    title: "Today's kitchen day is: `" + status + "`!",
     color: '#00bcb4',
     text: "Cinderelly, Cinderelly... Night and day it's Cinderelly, Make the fire, fix the breakfast... Wash the dishes, do the mopping!",
     mrkdwn_in: ['text']
