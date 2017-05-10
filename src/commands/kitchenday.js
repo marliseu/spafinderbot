@@ -11,24 +11,24 @@ const msgDefaults = {
     icon_emoji: config('ICON_EMOJI')
 }
 
-let now = new Date();
-let today = dateFormat(now, "shortDate");
-let status = schedule[today];
-
-if (!status) {
-    res.send("Bummer, I couldn't find Cinderella 🙃");
-    return;
-}
-
-let attachments = [{
-    title: "Today's kitchen day is... ",
-    color: '#00bcb4',
-    text: "> *" + status + "*! \n" +
-        "Cinderelly, Cinderelly...Night and day it 's Cinderelly, Make the fire, fix the breakfast... Wash the dishes, do the mopping!",
-    mrkdwn_in: ['text']
-}]
-
 const handler = (payload, res) => {
+    let now = new Date();
+    let today = dateFormat(now, "shortDate");
+    let status = schedule[today];
+
+    if (!status) {
+        res.send("Bummer, I couldn't find Cinderella 🙃");
+        return;
+    }
+
+    let attachments = [{
+        title: "Today's kitchen day is... ",
+        color: '#00bcb4',
+        text: "> *" + status + "*! \n" +
+            "Cinderelly, Cinderelly... Night and day it's Cinderelly, Make the fire, fix the breakfast... Wash the dishes, do the mopping!",
+        mrkdwn_in: ['text']
+    }]
+
     let msg = _.defaults({
         channel: payload.channel_name,
         attachments: attachments
