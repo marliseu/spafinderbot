@@ -23,7 +23,7 @@ app.use(bodyParser.urlencoded({ extended: true }))
 
 app.get('/', (req, res) => { res.send('\n 👋 🌍 \n') })
 
-app.post('/commands/kitchenday', (req, res) => {
+app.post('/commands/spafinderbot', (req, res) => {
     let payload = req.body
 
     if (!payload || payload.token !== config('STARBOT_COMMAND_TOKEN')) {
