@@ -7,7 +7,7 @@ module.exports = {
     "5/16/17": "Guiselle",
     "5/17/17": "Jacky",
     "5/18/17": "John B.",
-    "5/19/17": "John R.",
+    "5/19/17": "FREE DAY",
 
     "5/22/17": "Jose",
     "5/23/17": "Marcelo",
