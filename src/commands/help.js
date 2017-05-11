@@ -10,7 +10,7 @@ const msgDefaults = {
 }
 
 let attachments = [{
-        title: 'Spafinderbot will help you find out whose kitchen day it is!,
+        title: 'Spafinderbot will help you find out whose kitchen day it is!',
         color: '#00bcb4',
         text: '`/spafinder kitchenday` returns the person on kitchen duty today \n',
         mrkdwn_in: ['text']
