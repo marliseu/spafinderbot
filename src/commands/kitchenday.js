@@ -22,10 +22,10 @@ const handler = (payload, res) => {
     }
 
     let attachments = [{
-            title: "Today's kitchen day is... ",
+            title: "👠  " + status + "\n",
+            pretext: "Today's kitchen day is... ",
             color: '#00bcb4',
-            text: "> *" + status + "* 👠 \n" +
-                "Cinderelly, Cinderelly... Night and day it's Cinderelly, Make the fire, fix the breakfast... Wash the dishes, do the mopping!",
+            text: "_Cinderelly, Cinderelly... Night and day it's Cinderelly, Make the fire, fix the breakfast... Wash the dishes, do the mopping!_",
             mrkdwn_in: ['text']
         },
         {
