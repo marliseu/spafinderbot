@@ -22,12 +22,16 @@ const handler = (payload, res) => {
     }
 
     let attachments = [{
-        title: "Today's kitchen day is... ",
-        color: '#00bcb4',
-        text: "> *" + status + "* 👠 \n" +
-            "Cinderelly, Cinderelly... Night and day it's Cinderelly, Make the fire, fix the breakfast... Wash the dishes, do the mopping!",
-        mrkdwn_in: ['text']
-    }]
+            title: "Today's kitchen day is... ",
+            color: '#00bcb4',
+            text: "> *" + status + "* 👠 \n" +
+                "Cinderelly, Cinderelly... Night and day it's Cinderelly, Make the fire, fix the breakfast... Wash the dishes, do the mopping!",
+            mrkdwn_in: ['text']
+        },
+        {
+            image_url: "https://slack-imgs.com/?c=1&url=http%3A%2F%2Friffsy.com%2Fimage%2FxtTM_tinygif.gif"
+        }
+    ]
 
     let msg = _.defaults({
         channel: payload.channel_name,
