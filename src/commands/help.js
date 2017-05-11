@@ -10,9 +10,9 @@ const msgDefaults = {
 }
 
 let attachments = [{
-        title: 'Spafinderbot will help you find the hippest repos on GitHub',
-        color: '#2FA44F',
-        text: '`/spafinder repos` returns hip repos \n`/spafinder javascript` returns hip JavaScript repos',
+        title: 'Spafinderbot will help you find out whose kitchen day it is!,
+        color: '#00bcb4',
+        text: '`/spafinder kitchenday` returns the person on kitchen duty today \n',
         mrkdwn_in: ['text']
     },
     {
