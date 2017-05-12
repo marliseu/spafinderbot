@@ -13,7 +13,7 @@ const msgDefaults = {
 const handler = (payload, res) => {
 
     let index = Math.floor((Math.random() * marioisms.length) + 1).toString;
-    let status = marioisms[index];
+    let status = marioisms.index;
 
     if (!status) {
         res.send("Bummer, no Marioisms were found 🙃");
