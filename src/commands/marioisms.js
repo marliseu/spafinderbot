@@ -12,7 +12,7 @@ const msgDefaults = {
 
 const handler = (payload, res) => {
 
-    let index = Math.floor((Math.random() * marioisms.length));
+    let index = Math.floor((Math.random() * marioisms.length) + 1);
     let status = marioisms[index];
 
     if (!status) {
